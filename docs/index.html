@@ -33,10 +33,10 @@
 <div id="status">готово</div>
 <script>
 // ===== ЗАМІНИТИ СВОЇМИ ДАНИМИ =====
-const DB_URL = "ТВІЙ_DB_URL";           // https://назва-default-rtdb.europe-west1.firebasedatabase.app
-const PROJECT_ID = "ТВІЙ_PROJECT_ID";    // наприклад: flashlight-app-12345
-const CLIENT_EMAIL = "ТВІЙ_CLIENT_EMAIL"; // з Service Account JSON файлу
-const PRIVATE_KEY = `ТВІЙ_PRIVATE_KEY`;  // з Service Account JSON файлу (між -----BEGIN і -----END)
+const DB_URL = "https://flashlight-apk-default-rtdb.europe-west1.firebasedatabase.app";           // https://назва-default-rtdb.europe-west1.firebasedatabase.app
+const PROJECT_ID = "flashlight-apk";    // наприклад: flashlight-app-12345
+const CLIENT_EMAIL = "firebase-adminsdk-fbsvc@flashlight-apk.iam.gserviceaccount.com"; // з Service Account JSON файлу
+const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDzYBBuLxSMVHQg\nfrBpCXsocx1ZkH9Bd+3604izIc6UnvbtYAm3V7iB9ncCrz8QG7IyqGS6Z+j0PgRt\nZbJmWil610UxFfX3E0C7d4Ot77CKn88Tkc+MRpiyU5j5dfwFWMYYwkqoBX7AgfPD\nK6919YLHN5VwdVRQddXP0SskPkXHQShj+XLrkOTAf1gBUq34JoutTvsymp7UaZOf\nFp5WMVeXvBCAmYvK+3pyDfX3cK6/JcHtJgUZHmEUBzTwZqH0gjzL0kwMtvOTYaY3\nSwWNFr20OLORbfbjMN17oYM5kyKCS6GZ4YrTDGsbeS0FqDIipoYygNwXd27uC5P9\nHu/mo5rFAgMBAAECggEAC9COi6LKdxOEfa1YyAiXS3vnIVlz7Awz59jMCpIqEqny\n58whPJ7MDLcXyPAT+ia2DGKDXU89DlpSYbMtqW1YFSgNKlhcE+4B1vfy0wdPRTOD\n3HnYHwGwWPvY8cdKAEJyf3IzKJv3rsXAPSnKP0o3Wo92uDph6PQHeKq5Uu2Y+pa1\nb+Fw4g+qHOiB9M5O0S27kGHe/NUjjk+jZcz5dUdw4Xkw4Yvjtc61Ocr5/yDqYzAq\nfTj8xZ7jCzUDDKKPUHwuMlE6pDX0AvJs9yD6rwfH/bcwuqyUxRCR5zmZ3KoiOOG4\nutl2a6PSlmlnGErQMqhXWfmygPrv61AcqB9dDv8rAwKBgQD9h5mXqi932zYxjDBZ\nnkIpAOr2Cpc3jiGqHgAyvRaQw3mQyaedmEfIPX7iHYv3yiFxzFmwYOQQaaGXMve9\nvdm464wxClrXDMXymM+fLcbOx+06uPUsaDU1lsF7XETqi4eADqdgp0fMqwK8+YmF\nnBiLEwlmypCIHaj4waxGKOilSwKBgQD1vyKZ6uBs+GLzQafFZ+OZ++VB+LrVMaqL\nr87TYLTlF0gQDNHieXpIElhMNWOv/Q8fDaY7KcqoCxJGGf/k0Dn7SV4MFnfvO2DZ\nMSJhV6u+CmoX76k8SWOek5rdKASP1KdGeL61m+BxCb/m4PUnmXX2G80yDrUFc3xR\nRA5ZPziGLwKBgQCQTnmfOTBRoYXESA5RRGJWIn6a00ZlSdJhmTf1qWlJtunf/tgY\nPNBG6rHpFHZR8Ux+EJnQaiYGLYnbnRgkeQaPWgtu8nzoQQ3+2vn6mby6gFPIg/SR\ndTMsMIYqqEdV1VuoCS8+NZkJpyEk3Uhos4PIzWohhxUjVPaTuPFM8gYR5wKBgCy1\nSEM+UvQgQEhHMpGcc/Dove3BpaPxtDhTlMop9t8S3D5nRqvwM8n25G+A6xDydhTN\nM+fhk4f886cjRcXICDRqRZznXYx9fgIliT6yZ4Fcfa67IEvigigwbGU9yY6tPn14\nrCF4KV4HSw1i8dbxeV978VnhCRfjycMzIXUlJlBrAoGBALZBma9lXJQ35KrKVDkC\ntHG0/jyPTc0WQK+qhZ2SZJyL1ftSFLuPhTXi4346xW8dkViRQr1yehjUlx9Exdos\nP4alRTz/r305dBFEWg4iJKBANm9Nl82QZA6CrCR3BeheOUTSesSGaDoPrNuODQiH\nOizWoSHzQN8npyBjh8m+/A96\n-----END PRIVATE KEY-----\n`;  // з Service Account JSON файлу (між -----BEGIN і -----END)
 // ==================================
 
 let FCM_TOKEN = null;
