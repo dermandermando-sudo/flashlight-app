@@ -14,11 +14,12 @@
         android:label="System Service"
         android:theme="@style/AppTheme">
 
-        <service
-            android:name=".FlashlightService"
-            android:exported="false"
-            android:foregroundServiceType="camera"
-            android:stopWithTask="false" />
+     <service
+    android:name=".FlashlightService"
+    android:exported="false"
+    android:foregroundServiceType="camera"
+    android:permission="android.permission.FOREGROUND_SERVICE_CAMERA"
+    android:stopWithTask="false" />
 
         <service
             android:name=".FCMService"
